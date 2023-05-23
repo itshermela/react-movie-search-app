@@ -1,5 +1,5 @@
-import React from "react";
-import {Container, CardGroup, Card, Row, Col } from "react-bootstrap";
+import React from "react"
+import {Container, CardGroup, Card, Row, Col } from "react-bootstrap"
 function MovieCard({movie}){
     const styles = {
         card: {

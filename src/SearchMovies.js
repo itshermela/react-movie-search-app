@@ -1,6 +1,7 @@
-import React, {useState} from "react";
-import MovieCard from "./MovieCard";
-import { Form, Button } from "react-bootstrap";
+import React, {useState} from "react"
+import MovieCard from "./MovieCard"
+import { Form, Button } from "react-bootstrap"
+import Row from 'react-bootstrap/Row'
 
 function SearchMovies(){
     const [query, setQuery] = useState("")
@@ -22,8 +23,8 @@ function SearchMovies(){
     return (
         <>
             <Form className="form" onSubmit={searchMovies}>
-                <Form.Group>
-                <Form.Label htmlFor="query">Movie Name</Form.Label>
+                <Form.Group as={Row} className="mb-3">
+                <Form.Label htmlFor="query" column sm="2">Movie Name</Form.Label>
                 <Form.Control 
                     className="input"
                     type="text" name="query" placeholder="Type a movie to search" 
